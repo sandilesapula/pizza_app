@@ -44,6 +44,15 @@ section.hero {
     background: $secondary;
 }
 
+
+.btn-primary {
+    background: $primary;
+    transition: $smooth;
+    &:hover {
+        background: $primary-hover;
+    }
+}
+
 .add-to-cart {
     border: 2px solid $primary;
     color: $primary;
@@ -54,3 +63,23 @@ section.hero {
         color: $pure;
     }
 }
+
+section.cart {
+    background: $secondary;
+    .amount {
+        color: $primary;
+        &:hover {
+            color: $primary-hover;
+        }
+    }
+}
+
+section.login {
+    background: $secondary;
+    min-height: calc(100vh - 86px);
+    a {
+        color: $primary;
+    }
+
+}
+
