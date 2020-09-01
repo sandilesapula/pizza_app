@@ -7,6 +7,8 @@ function cartController() {
             //  let cart = {
             //    items: {
             //        pizzaId: { item: pizzaObject, qty:0 },
+            //        pizzaId: { item: pizzaObject, qty:0 },
+            //        pizzaId: { item: pizzaObject, qty:0 },
             //    },
             //    totalQty: 0,
             //    totalPrice: 0
