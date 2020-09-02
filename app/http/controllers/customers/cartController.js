@@ -29,11 +29,11 @@ function cartController() {
                     qty: 1
                 }
                 cart.totalQty = cart.totalQty + 1;
-                cart.totalPrice = cart.totalPrice + req.body.price
+                cart.totalPrice = Number(cart.totalPrice) + Number(req.body.price)
             } else {
                 cart.items[req.body._id].qty = cart.items[req.body._id].qty + 1
                  cart.totalQty = cart.totalQty + 1
-                 cart.totalPrice = cart.totalPrice + req.body.price
+                 cart.totalPrice = Number(cart.totalPrice) + Number(req.body.price)
             }
             return res.json({ totalQty: req.session.cart.totalQty })
         }
